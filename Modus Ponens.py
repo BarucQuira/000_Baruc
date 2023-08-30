@@ -8,16 +8,16 @@ Sistemas Expertos
 
 # Premisas
 
-ProsicionA = True #Si un pez pasa mas de 5 minutos fuera del agua
-ProsicionB = True #Muere
+ProposicionA = True #Si un pez pasa mas de 5 minutos fuera del agua
+ProposicionB = True #Muere
 
-Premisa1 = ProsicionA and ProsicionB # Si un pez pasa mas de 5 minutos fuera del agua, muere
+Premisa1 = ProposicionA and ProposicionB # Si un pez pasa mas de 5 minutos fuera del agua, muere
 Premisa2 = ProposicionA # Mi pez paso mas de 5 minutos fuera del agua
 
 #Modus Ponens
 
 if Premisa2:
-    ProsicionB = True
+    ProposicionB = True
     conclusion = "Mi pez ha muerto"
     print(conclusion)
 
